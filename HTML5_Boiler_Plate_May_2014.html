@@ -1,0 +1,39 @@
+<!doctype html>
+<html class="no-js"> <!-- This is so that if anything can't run js it does this -->
+    <head>
+        <meta charset="utf-8"> <!-- standard character set -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- meta type specific for microsoft to tell it which engine to run in the browser -->
+        <title></title> <!-- Title for the page -->
+        <meta name="description" content=""> <!-- Web Crawler optimization for content -->
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- getting CSS to render for mobile device invented by apple -->
+
+        <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css"> <!-- Going back to Eric Meyer's reset that 0's EVERYTHING. Nicholas Gallagher wrote a more soft version to what he feels is more appropriate to what the browser does. -->
+        <link rel="stylesheet" href="css/main.css"> <!--CSS stylesheet link -->
+        <script src="js/vendor/modernizr-2.8.0.min.js"></script> <!-- Has to run in the head. Has to load into the browser before dom loads itself. Millions of tiny little javascript tests. Goes into the dom and tests over and over again that happen in less than a billasecond. This is the tool that you use to write css based on FEATURES not Browsers. Code in the top are the tests. If they're true then run it. If they return false then you can write CSS no-code { rule: do this }  you can check on modernizer.com. ALSO dont use a shit every time. If anything needs to be supported in Ie8 or less. THEN use one of the "if statements" from below to initiate the shiv from the actual version from the html5shiv site.-->
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <p>Hello world! This is HTML5 Boilerplate.</p>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> <!--tries to get from internet -->
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script><!-- fires if 24 fails-->
+        <script src="js/plugins.js"></script> <!--Java script plugins -->
+        <script src="js/main.js"></script><!-- naming conventions-->
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+    </body>
+</html>
